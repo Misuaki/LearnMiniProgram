@@ -5,8 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    name: 'hello world',
+    students: [
+      { id: 110, name: 'kobe', age: 30},
+      { id: 1, name: 'james', age: 30 },
+      { id: 120, name: 'curry', age: 20 },
+      { id: 140, name: 'durant', age: 25 },
+    ],
+    count: 10
   },
+  click(){
+    console.log('按钮发生了点击'),
+    this.setData({
+      count: this.data.count + 1
+    })
+  },
+
+  click2() {
+    console.log('按钮发生了点击'),
+      this.setData({
+        count: this.data.count - 1
+      })
+  },
+
+
 
   /**
    * 生命周期函数--监听页面加载

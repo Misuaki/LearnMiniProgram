@@ -1,2 +1,11 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- <text>pages/home/home.wxml</text> -->
+<view>{{name}}</view>
+
+<!-- 列表遍历 -->
+<view wx:for='{{students}}'>{{item.name}}----{{item.age}}</view>
+
+<!-- 事件监听，改变data的值 -->
+<view>当前数值：{{count}}</view>
+<button size="mini" bindtap="click">+</button>
+<button size="mini" bindtap="click2">+</button>
